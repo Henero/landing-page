@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  font-family: "Dosis", sans-serif;
 }
 
 .navigation {
@@ -26,6 +37,16 @@ ul {
   gap: 16px;
   font-size: 18px;
   color: #e5e7eb;
+}
+
+a {
+  text-decoration: none;
+  color: #f9faf8;
+}
+
+a:hover {
+  color: #3882f6;
+  transition: 0.2s;
 }
 
 .description {
@@ -56,9 +77,9 @@ ul {
 
 .background {
   display: flex;
-  background-image: url(/img/masahiro.jpg);
+  background-image: url(img/tokyo.jpg);
   background-size: cover;
-  width: 36vw;
+  width: 450px;
   height: 250px;
   border-radius: 0.7rem;
 }
@@ -73,6 +94,13 @@ button {
   background-color: #3882f6;
   font-size: 16px;
   font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f9faf8;
+  color: #3882f6;
+  transition: 0.2s;
 }
 
 .information {
@@ -92,7 +120,7 @@ button {
 .card-container {
   display: flex;
   justify-content: center;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   gap: 2rem;
 }
 
@@ -100,7 +128,7 @@ button {
   width: 140px;
   height: 10vh;
   border: 3px solid #3882f6;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-flow: column wrap;
 }
@@ -110,5 +138,75 @@ button {
   padding: 0.5rem 0;
   text-align: center;
   font-size: 16px;
-  font-weight: 100;
+}
+
+.testimonials {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  font-style: italic;
+}
+
+.testimonial-text {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.author {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: end;
+}
+
+.join-us {
+  padding: 4rem 1rem;
+  color: #f9faf8;
+  display: flex;
+  justify-content: center;
+}
+
+.action {
+  width: 60%;
+  background-color: #3882f6;
+  padding: 2rem 0;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.call {
+  width: 80%;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sign-up {
+  width: 80%;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register-action {
+  border: 1px solid #f9faf8;
+  border-radius: 8px;
+  /* margin-bottom: 1rem; */
+}
+
+footer {
+  background-color: #1f2937;
+  padding: 1.5rem;
+  text-align: center;
+  color: #f9faf8;
 }
